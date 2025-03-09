@@ -5,3 +5,11 @@
 {% block pubdate %}
   <time datetime="2025-03-10" pubdate>March 9, 2025</time>
 {% endblock pubdate %}
+
+{% block content %}
+{% for obj in harvard_park_homicides %}
+    {{ obj.first_name }} {{ obj.last_name }} {{ obj.age }}<br>
+{% endfor %}
+{% endblock %}
+
+
